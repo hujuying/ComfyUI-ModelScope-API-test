@@ -91,7 +91,7 @@ def tensor_to_base64_url(image_tensor):
         print(f"图像转换失败: {e}")
         raise Exception(f"图像格式转换失败: {str(e)}")
 
-class QwenImageNode:
+class ModelScopeImageNode:
     def __init__(self):
         pass
     
@@ -266,7 +266,7 @@ class QwenImageNode:
             error_tensor = torch.from_numpy(error_np)[None,]
             return (error_tensor,)
 
-class QwenImageEditNode:
+class ModelScopeImageEditNode:
     def __init__(self):
         pass
 
